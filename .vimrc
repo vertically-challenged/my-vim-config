@@ -10,15 +10,14 @@ Plug 'easymotion/vim-easymotion'
 Plug 'mattn/emmet-vim'
 
 "Цветовые схемы
-Plug 'morhetz/gruvbox'
-Plug 'zeis/vim-kolor'
-Plug 'henrynewcomer/vim-theme-papaya'
-Plug 'jonathanfilip/vim-lucius'
-Plug 'sonph/onehalf', {'rtp': 'vim/'}
+Plug 'arcticicestudio/nord-vim'
+Plug 'vim-airline/vim-airline'
+Plug 'vim-airline/vim-airline-themes'
 
 call plug#end()
 
 
+set clipboard=unnamedplus 
 set number
 set expandtab
 set tabstop=2
@@ -27,11 +26,11 @@ set incsearch
 set mouse=a
 syntax on
 let g:mapleader=','
+"set t_Co=256
+"set cursorline
+set termguicolors
 
-set t_Co=256
-set cursorline
-colorscheme onehalfdark
-"let g:airline_theme='onehalfdark'
+colorscheme nord
 
 map <C-n> :NERDTreeToggle<CR>
 map <Leader> <Plug>(easymotion-prefix)
