@@ -5,6 +5,22 @@ source ~/.vimrc
 :PlugInstall
 
 -------------------------
+https://github.com/tpope/vim-fugitive
+-------------------------
+
+vmap <C-c> "+y
+vmap <C-x> "+c
+vmap <C-v> c<ESC>"+p
+imap <C-v> <ESC>"+pa
+
+-------------------------
+
+map <silent> <C-h> :call WinMove('h')<CR>
+map <silent> <C-j> :call WinMove('j')<CR>
+map <silent> <C-k> :call WinMove('k')<CR>
+map <silent> <C-l> :call WinMove('l')<CR>
+
+-------------------------
 
 Ctrl+Y а затем , Emmet
 , а после s поиск всех букв
